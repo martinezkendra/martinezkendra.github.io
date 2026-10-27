@@ -3,8 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Primary Meta Tags -->
     <title>Kendra Martinez | Diseñadora Gráfica Junior | Portfolio</title>
+    <meta name="title" content="Kendra Martinez | Diseñadora Gráfica Junior | Portfolio">
+    <meta name="description" content="Portfolio profesional de Kendra Martinez, Diseñadora Gráfica Junior en La Paz, Bolivia. Especialista en identidad visual, branding, contenido para redes sociales y diseño publicitario.">
+    <meta name="keywords" content="Kendra Martinez, Diseñadora Gráfica, Portfolio Diseño Gráfico, Branding, Identidad Visual, Redes Sociales, La Paz Bolivia, Crossmedia, Illustrator, Photoshop">
+    <meta name="author" content="Kendra Martinez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://martinezkendra.github.io/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23e20eb5'/><text x='50%' y='62%' font-size='50' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>K</text></svg>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martinezkendra.github.io/">
+    <meta property="og:title" content="Kendra Martinez | Diseñadora Gráfica Junior | Portfolio">
+    <meta property="og:description" content="Especialista en identidad visual, contenido para redes sociales y piezas publicitarias digitales & impresas. Descubre mis trabajos destacados.">
+    <meta property="og:image" content="https://martinezkendra.github.io/pictures/profile.jpeg">
+    <meta property="og:locale" content="es_BO">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://martinezkendra.github.io/">
+    <meta name="twitter:title" content="Kendra Martinez | Diseñadora Gráfica Junior | Portfolio">
+    <meta name="twitter:description" content="Especialista en identidad visual, contenido para redes sociales y piezas publicitarias digitales & impresas. Descubre mis trabajos destacados.">
+    <meta name="twitter:image" content="https://martinezkendra.github.io/pictures/profile.jpeg">
+
+    <!-- JSON-LD Structured Data (Schema.org Person) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kendra Martinez",
+      "jobTitle": "Diseñadora Gráfica Junior",
+      "url": "https://kendramartinez.com",
+      "image": "https://martinezkendra.github.io/pictures/profile.jpeg",
+      "email": "mailto:kendramz2000@gmail.com",
+      "telephone": "+59173294700",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "La Paz",
+        "addressCountry": "BO"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/kendra-mart%C3%ADnez-223266283",
+        "https://www.behance.net/kendramartne"
+      ],
+      "knowsAbout": [
+        "Diseño Gráfico",
+        "Identidad Visual",
+        "Branding",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Diseño para Redes Sociales",
+        "Producción Crossmedia"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Privada Franz Tamayo"
+      }
+    }
+    </script>
+
     <!-- Google Fonts + Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -49,7 +114,7 @@
             left: 0;
             width: 56px;
             height: 4px;
-            background: #e67e22;
+            background: #e20eb5;
             border-radius: 4px;
         }
         .section {
@@ -77,14 +142,30 @@
             padding: 1rem 0;
             flex-wrap: wrap;
         }
-        .logo {
+/* LOGO STYLES */
+        .logo-img {
+            max-height: 45px; /* Üst menüdeki logo yüksekliği */
+            width: auto;
+            display: block;
+            transition: transform 0.2s ease;
+        }
+        .logo-img:hover {
+            transform: scale(1.02);
+        }
+        .footer-logo {
+            max-height: 55px; /* Alt kısımdaki logo yüksekliği */
+            width: auto;
+            display: block;
+            margin-bottom: 0.5rem;
+        }        .logo {
             font-size: 1.6rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #e67e22, #d35400);
+            background: linear-gradient(135deg, #e20eb5, #d35400);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             letter-spacing: -0.5px;
+            text-decoration: none;
         }
         .nav-links {
             display: flex;
@@ -118,7 +199,7 @@
         }
         .hero-text .badge {
             background: #e67e2210;
-            color: #e67e22;
+            color: #000000;
             padding: 6px 16px;
             border-radius: 40px;
             font-size: 0.8rem;
@@ -137,7 +218,7 @@
         .hero-text .titulo {
             font-size: 1.35rem;
             font-weight: 500;
-            color: #e67e22;
+            color: #e20eb5;
             margin-bottom: 1rem;
         }
         .hero-text p {
@@ -156,7 +237,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: #e67e22;
+            background: #e20eb5;
             color: white;
             padding: 0.8rem 1.8rem;
             border-radius: 40px;
@@ -168,8 +249,8 @@
         }
         .btn-outline {
             background: transparent;
-            border: 1.5px solid #e67e22;
-            color: #e67e22;
+            border: 1.5px solid #e20eb5;
+            color: #e20eb5;
         }
         .btn-outline:hover {
             background: #e67e22;
@@ -204,6 +285,54 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        /* ----- SERVICIOS ----- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .service-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 24px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: default;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+            border-color: #ffe0cc;
+        }
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: #fef2e6;
+            color: #e20eb5;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1.2rem;
+            transition: transform 0.3s;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+        .service-card h3 {
+            font-size: 1.25rem;
+            color: #2d3e50;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #5f6c80;
+            line-height: 1.5;
+        }
+
         /* tarjetas experiencia */
         .timeline {
             display: flex;
@@ -235,7 +364,7 @@
             font-weight: 700;
         }
         .exp-date {
-            color: #e67e22;
+            color: #e20eb5;
             font-weight: 500;
             background: #fef2e6;
             padding: 4px 12px;
@@ -261,7 +390,7 @@
             color: #34495e;
         }
         .exp-list li i {
-            color: #e67e22;
+            color: #e20eb5;
             font-size: 0.8rem;
             margin-top: 0.2rem;
             width: 18px;
@@ -360,7 +489,7 @@
         }
         .portfolio-info p {
             font-size: 0.8rem;
-            color: #e67e22;
+            color: #e20eb5;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -424,7 +553,7 @@
         .contact-item i {
             width: 32px;
             font-size: 1.3rem;
-            color: #e67e22;
+            color: #e20eb5;
         }
         .contact-item a {
             text-decoration: none;
@@ -442,6 +571,49 @@
             color: #6c7a8a;
             border-top: 1px solid #f0e7de;
         }
+
+        /* ----- SCROLL REVEAL ANIMATIONS ----- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
         @media (max-width: 800px) {
             .navbar {
                 flex-direction: column;
@@ -480,6 +652,9 @@
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
+            /* Mobilde logoların boyutunu biraz küçültelim */
+            .logo-img { max-height: 35px; }
+            .footer-logo { max-height: 45px; }
         }
     </style>
 </head>
@@ -487,16 +662,19 @@
 
 <header>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">Kendra M.</div>
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="#inicio" style="text-decoration: none;">
+                <img src="pictures/logo.png" alt="Kendra Martinez Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#capacidades">Capacidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 </header>
 
@@ -505,65 +683,98 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text reveal-left">
                     <div class="badge">✨ Diseño estratégico + atención al detalle</div>
                     <h1>Kendra Martinez</h1>
                     <div class="titulo">Diseñadora Gráfica Junior</div>
                     <p>Especialista en identidad visual, contenido para redes sociales y piezas publicitarias digitales & impresas. Enfocada en soluciones visuales funcionales con alto impacto comunicativo.</p>
                     <div class="hero-contact">
-                        <a href="#portafolio" class="btn"><i class="fas fa-images"></i> Ver trabajos</a>
-                        <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contáctame</a>
+                        <a href="#portafolio" class="btn"><i class="fas fa-images" aria-hidden="true"></i> Ver trabajos</a>
+                        <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane" aria-hidden="true"></i> Contáctame</a>
+                        <a href="kendra martinez.pdf" download="Kendra_Martinez_CV.pdf" class="btn btn-outline"><i class="fas fa-file-pdf" aria-hidden="true"></i> Descargar CV</a>
                     </div>
                 </div>
-                <div class="hero-avatar"><div class="avatar-circle">
-    <img src="pictures/profile.jpeg" alt="Kendra Martinez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-</div>
+                <div class="hero-avatar reveal-right">
+                    <div class="avatar-circle">
+                        <img src="pictures/profile.jpeg" alt="Kendra Martinez - Diseñadora Gráfica Junior en La Paz Bolivia" width="220" height="220" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ACERCA -->
-    <div class="container">
-        <div style="background:#ffffff; border-radius: 36px; padding: 2rem; margin-top: -30px; box-shadow: 0 8px 25px rgba(0,0,0,0.02); border: 1px solid #f5e9df;">
-            <p style="font-size: 1rem; line-height: 1.6; color: #2c3e50;"><strong style="color:#e67e22;">✦ Acerca de mí</strong><br>
+    <section class="container" aria-label="Acerca de mí">
+        <div class="reveal-scale" style="background:#ffffff; border-radius: 36px; padding: 2rem; margin-top: -30px; box-shadow: 0 8px 25px rgba(0,0,0,0.02); border: 1px solid #f5e9df;">
+            <p style="font-size: 1rem; line-height: 1.6; color: #2c3e50;"><strong style="color:#e20eb5;">✦ Acerca de mí</strong><br>
             Diseñadora gráfica junior con formación en Diseño Gráfico y Producción Crossmedia (hasta 5° semestre). Experiencia en identidad visual, diseño para redes sociales y desarrollo de piezas publicitarias digitales e impresas. Me enfoco en la composición estratégica, la atención al detalle y la creación de soluciones visuales funcionales. Interesada en seguir desarrollando mis habilidades creativas y técnicas en proyectos que requieran comunicación visual efectiva.</p>
         </div>
-    </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2 class="reveal">Mis Servicios</h2>
+            <p class="reveal" style="margin-bottom: 2rem; color: #5a6e85;">Soluciones visuales adaptadas a las necesidades de tu marca, desde la concepción hasta el producto final.</p>
+            <div class="services-grid">
+                <div class="service-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Identidad Visual</h3>
+                    <p>Diseño de logotipos, manuales de marca y sistemas visuales coherentes que transmitan la verdadera esencia de tu empresa.</p>
+                </div>
+                <div class="service-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media</h3>
+                    <p>Creación de contenido estratégico, posts y stories para redes sociales, mejorando la presencia digital de tu marca.</p>
+                </div>
+                <div class="service-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Diseño Editorial</h3>
+                    <p>Desarrollo de piezas impresas y digitales, como afiches, catálogos, fichas técnicas y material publicitario con atención al detalle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- EXPERIENCIA LABORAL -->
     <section id="experiencia" class="section">
         <div class="container">
-            <h2>Experiencia profesional</h2>
+            <h2 class="reveal">Experiencia profesional</h2>
             <div class="timeline">
-<div class="exp-card">
-    <div class="exp-header">
-        <h3>Diseño Gráfico y Producción Crossmedia</h3>
-        <span class="exp-date">Ago 2022 — Feb 2025</span>
-    </div>
-    <div class="exp-sub">Universidad Privada Franz Tamayo · La Paz, Bolivia</div>
-    <ul class="exp-list">
-        <li><i class="fas fa-check-circle"></i> Formación en identidad visual, tipografía y composición estratégica.</li>
-        <li><i class="fas fa-check-circle"></i> Producción crossmedia para piezas digitales e impresas.</li>
-        <li><i class="fas fa-check-circle"></i> Desarrollo de proyectos de branding y diseño publicitario.</li>
-    </ul>
-</div>
-                <div class="exp-card">
+                <article class="exp-card reveal">
+                    <div class="exp-header">
+                        <h3>Diseño Gráfico y Producción Crossmedia</h3>
+                        <span class="exp-date">Ago 2022 — Feb 2025</span>
+                    </div>
+                    <div class="exp-sub">Universidad Privada Franz Tamayo · La Paz, Bolivia</div>
+                    <ul class="exp-list">
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Formación en identidad visual, tipografía y composición estratégica.</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Producción crossmedia para piezas digitales e impresas.</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Desarrollo de proyectos de branding y diseño publicitario.</li>
+                    </ul>
+                </article>
+                <article class="exp-card reveal">
                     <div class="exp-header">
                         <h3>Diseñadora Gráfica</h3>
                         <span class="exp-date">Oct 2024 — Ene 2025</span>
                     </div>
                     <div class="exp-sub">Milestone Bolivia · La Paz, Bolivia</div>
                     <ul class="exp-list">
-                        <li><i class="fas fa-palette"></i> Diseñé posts para Facebook, mejorando la presencia digital de la empresa.</li>
-                        <li><i class="fas fa-file-alt"></i> Creé fichas técnicas de productos con un diseño claro y profesional.</li>
-                        <li><i class="fas fa-magic"></i> Utilicé herramientas como Adobe Illustrator y Photoshop para la creación de contenido.</li>
-                        <li><i class="fas fa-images"></i> Diseñé y realicé montajes de imágenes para publicaciones en redes sociales.</li>
+                        <li><i class="fas fa-palette" aria-hidden="true"></i> Diseñé posts para Facebook, mejorando la presencia digital de la empresa.</li>
+                        <li><i class="fas fa-file-alt" aria-hidden="true"></i> Creé fichas técnicas de productos con un diseño claro y profesional.</li>
+                        <li><i class="fas fa-magic" aria-hidden="true"></i> Utilicé herramientas como Adobe Illustrator y Photoshop para la creación de contenido.</li>
+                        <li><i class="fas fa-images" aria-hidden="true"></i> Diseñé y realicé montajes de imágenes para publicaciones en redes sociales.</li>
                     </ul>
-                </div>
+                </article>
             </div>
-            <div style="margin-top: 2rem; background: #fef7f0; border-radius: 28px; padding: 1.5rem; border-left: 4px solid #e67e22;">
-                <p style="font-weight: 600; margin-bottom: 0.3rem;"><i class="fas fa-graduation-cap" style="color:#e67e22; margin-right: 10px;"></i>Formación académica</p>
+            <div class="reveal-scale" style="margin-top: 2rem; background: #fef7f0; border-radius: 28px; padding: 1.5rem; border-left: 4px solid #e67e22;">
+                <p style="font-weight: 600; margin-bottom: 0.3rem;"><i class="fas fa-graduation-cap" style="color:#e67e22; margin-right: 10px;" aria-hidden="true"></i>Formación académica</p>
                 <p style="color: #2c3e50;">Diseño Gráfico y Producción Crossmedia (hasta 5° semestre) · En curso<br>Énfasis en composición visual, tipografía y comunicación estratégica.</p>
             </div>
         </div>
@@ -572,97 +783,98 @@
     <!-- ========== PORTAFOLIO / TRABAJOS DESTACADOS ========== -->
     <section id="portafolio" class="section">
         <div class="container">
-            <h2>Portafolio · diseños destacados</h2>
-            <p style="margin-bottom: 2rem; color: #5a6e85;">Proyectos visuales que reflejan mi enfoque en tipografía, identidad de marca, afiches conceptuales y diseño editorial.</p>
+            <h2 class="reveal">Portafolio · diseños destacados</h2>
+            <p class="reveal" style="margin-bottom: 2rem; color: #5a6e85;">Proyectos visuales que reflejan mi enfoque en tipografía, identidad de marca, afiches conceptuales y diseño editorial.</p>
             <div class="portfolio-grid">
                 <!-- 1. Especimen tipográfico - Paul Renner / Futura -->
-                <div class="portfolio-item" data-img="Especimen tipográfico-03.png">
-                    <img class="portfolio-img" src="pictures/Especimen%20tipográfico-03.png" alt="Especimen tipográfico Paul Renner" loading="lazy">
+                <article class="portfolio-item reveal" data-img="Especimen tipográfico-03.png">
+                    <img class="portfolio-img" src="pictures/Especimen%20tipográfico-03.png" alt="Especimen tipográfico homenajen a Paul Renner y tipografía Futura por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Especimen Tipográfico</h3>
                         <p>Tipografía / Bauhaus</p>
                         <div class="portfolio-desc">Homenaje a Paul Renner y la tipografía Futura. Pieza inspirada en la funcionalidad y la modernidad industrial. Proyecto de estudio sobre la Bauhaus.</div>
                     </div>
-                </div>
+                </article>
                 <!-- 2. Planet Zanná -->
-                <div class="portfolio-item" data-img="Planet Zanná.jpg">
-                    <img class="portfolio-img" src="pictures/Mesa%20de%20trabajo%201@2x.png" alt="Planet Zanná - Branding natural" loading="lazy">
+                <article class="portfolio-item reveal" data-img="Planet Zanná.jpg">
+                    <img class="portfolio-img" src="pictures/Mesa%20de%20trabajo%201@2x.png" alt="Diseño de portada musical Cristalyne por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Portada musical Cristalyne</h3>
                         <p>Branding / Packaging</p>
                         <div class="portfolio-desc">Diseño de identidad y etiqueta para línea de vitaminas "Extractos de teVerde". Estética fresca y natural que conecta con el bienestar.</div>
                     </div>
-                </div>
+                </article>
                 <!-- 3. La belleza ocurre en silencio -->
-                <div class="portfolio-item" data-img="poster belleza, naturaleza, sutileza.png">
-                    <img class="portfolio-img" src="pictures/Planet%20Zanná.jpg" alt="Poster belleza naturaleza sutileza" loading="lazy">
+                <article class="portfolio-item reveal" data-img="poster belleza, naturaleza, sutileza.png">
+                    <img class="portfolio-img" src="pictures/Planet%20Zanná.jpg" alt="Poster conceptual Planet Zanná estilo poesía visual por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Planet Zanná</h3>
                         <p>Poster / Poesía visual</p>
                         <div class="portfolio-desc">Afiche conceptual que explora la sutileza de la naturaleza y el poder de lo minimalista. Tipografía orgánica y composición etérea.</div>
                     </div>
-                </div>
+                </article>
                 <!-- 4. Donde la piel marca el ritmo -->
-                <div class="portfolio-item" data-img="poster donde la piel marca el ritmo.png">
-                    <img class="portfolio-img" src="pictures/poster%20belleza,%20naturaleza,%20sutileza.png" alt="Poster piel y ritmo" loading="lazy">
+                <article class="portfolio-item reveal" data-img="poster donde la piel marca el ritmo.png">
+                    <img class="portfolio-img" src="pictures/poster%20belleza,%20naturaleza,%20sutileza.png" alt="Pieza gráfica La belleza ocurre en silencio por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>La belleza ocurre en silencio</h3>
                         <p>Arte / Expresión corporal</p>
                         <div class="portfolio-desc">Pieza gráfica que fusiona movimiento, textura y sensualidad. Trabajo de experimentación con fotografía y tipografía dinámica.</div>
                     </div>
-                </div>
+                </article>
                 <!-- 5. DUA LIPA - Radical Optimism -->
-                <div class="portfolio-item" data-img="POSTER DUA LIPA.png">
-                    <img class="portfolio-img" src="pictures/poster%20donde%20la%20piel%20marca%20el%20ritmo.png" alt="Poster Dua Lipa" loading="lazy">
+                <article class="portfolio-item reveal" data-img="POSTER DUA LIPA.png">
+                    <img class="portfolio-img" src="pictures/poster%20donde%20la%20piel%20marca%20el%20ritmo.png" alt="Póster conceptual Donde la piel marca el ritmo por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Donde la piel marca el ritmo</h3>
                         <p>Póster / Música</p>
                         <div class="portfolio-desc">Inspirado en el álbum "Radical Optimism". Diseño audaz, con paleta vibrante y composición moderna para capturar la energía pop.</div>
                     </div>
-                </div>
+                </article>
                 <!-- 6. VENOM: Let There Be Carnage -->
-                <div class="portfolio-item" data-img="poster venom.jpg">
-                    <img class="portfolio-img" src="pictures/poster%20venom.jpg" alt="Poster Venom" loading="lazy">
+                <article class="portfolio-item reveal" data-img="poster venom.jpg">
+                    <img class="portfolio-img" src="pictures/poster%20venom.jpg" alt="Poster de cine fanart Venom Carnage por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Venom: Carnage</h3>
                         <p>Cine / Fanart</p>
                         <div class="portfolio-desc">Poster conceptual de la película "Let There Be Carnage", integrando tipografía agresiva y contraste dramático. Homenaje al universo simbionte.</div>
                     </div>
-                </div>
-            </div>
-            <div class="portfolio-item" data-img="POSTER DUA LIPA.png">
-                    <img class="portfolio-img" src="pictures/POSTER%20DUA%20LIPA.png" alt="POSTER DUA LIPA" loading="lazy">
+                </article>
+                <!-- 7. POSTER DUA LIPA -->
+                <article class="portfolio-item reveal" data-img="POSTER DUA LIPA.png">
+                    <img class="portfolio-img" src="pictures/POSTER%20DUA%20LIPA.png" alt="Diseño de portada musical Radical Optimism Dua Lipa por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
                         <h3>Portada Radical Optmism</h3>
                         <p>Music / Cover</p>
                         <div class="portfolio-desc">Inspirado en el álbum "Radical Optimism". Diseño audaz, con paleta vibrante y composición moderna para capturar la energía pop.</div>
                     </div>
-                </div>
-            <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: #8a99aa;"><i class="fas fa-mouse-pointer"></i> Haz clic en cualquier imagen para verla a detalle</p>
+                </article>
+            </div>
+            <p class="reveal" style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: #8a99aa;"><i class="fas fa-mouse-pointer" aria-hidden="true"></i> Haz clic en cualquier imagen para verla a detalle</p>
         </div>
     </section>
 
     <!-- CAPACIDADES + IDIOMAS -->
     <section id="capacidades" class="section">
         <div class="container">
-            <h2>Capacidades & herramientas</h2>
+            <h2 class="reveal">Capacidades & herramientas</h2>
             <div class="skills-grid">
-                <span class="skill-tag">🎯 trabajo en equipo</span>
-                <span class="skill-tag">📋 Responsabilidad</span>
-                <span class="skill-tag">🔍 Atención al detalle</span>
-                <span class="skill-tag">📸 Edición y retoque fotográfico</span>
-                <span class="skill-tag">🎨 Adobe Illustrator</span>
-                <span class="skill-tag">🖌️ Adobe Photoshop</span>
-                <span class="skill-tag">✨ Creative Content Creation - Canva</span>
-                <span class="skill-tag">📊 Manejo software de infografías 3D</span>
-                <span class="skill-tag">🧠 Capacidad de autoaprendizaje</span>
-                <span class="skill-tag">📱 Diseño para RRSS</span>
-                <span class="skill-tag">🖨️ Piezas impresas/publicitarias</span>
+                <span class="skill-tag reveal">🎯 trabajo en equipo</span>
+                <span class="skill-tag reveal">📋 Responsabilidad</span>
+                <span class="skill-tag reveal">🔍 Atención al detalle</span>
+                <span class="skill-tag reveal">📸 Edición y retoque fotográfico</span>
+                <span class="skill-tag reveal">🎨 Adobe Illustrator</span>
+                <span class="skill-tag reveal">🖌️ Adobe Photoshop</span>
+                <span class="skill-tag reveal">✨ Creative Content Creation - Canva</span>
+                <span class="skill-tag reveal">📊 Manejo software de infografías 3D</span>
+                <span class="skill-tag reveal">🧠 Capacidad de autoaprendizaje</span>
+                <span class="skill-tag reveal">📱 Diseño para RRSS</span>
+                <span class="skill-tag reveal">🖨️ Piezas impresas/publicitarias</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h2 style="margin-bottom: 1.5rem;">Idiomas</h2>
-                <div class="idiomas-box">
+                <h2 class="reveal" style="margin-bottom: 1.5rem;">Idiomas</h2>
+                <div class="idiomas-box reveal-scale">
                     <div class="idioma-item">
                         <strong>🇪🇸 Español</strong>
                         <span>Nativo (Lengua materna)</span>
@@ -684,33 +896,34 @@
     <!-- CONTACTO -->
     <section id="contacto" class="section">
         <div class="container">
-            <h2>Conectemos</h2>
+            <h2 class="reveal">Conectemos</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1rem;">
-                <div style="flex: 1.2;">
-<div class="contact-info">
-    <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:kendramz2000@gmail.com">kendramz2000@gmail.com</a>
-    </div>
-    <div class="contact-item">
-        <i class="fas fa-phone-alt"></i>
-        <a href="tel:+59173294700">(+591) 73294700</a>
-    </div>
-    <div class="contact-item">
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/kendra-mart%C3%ADnez-223266283" target="_blank" rel="noopener noreferrer">linkedin.com/in/kendra-martínez</a>
-    </div>
-    <div class="contact-item">
-        <i class="fab fa-behance"></i>
-        <a href="https://www.behance.net/kendramartne" target="_blank" rel="noopener noreferrer">behance.net/kendramartne</a>
-    </div>
-    <div class="contact-item">
-        <i class="fas fa-globe"></i>
-        <span>Disponible para freelance & proyectos digitales</span>
-    </div>
-</div>
-                <div style="flex: 0.9; background: #fefaf5; border-radius: 32px; padding: 1.5rem; text-align: center; border: 1px solid #ffe6d5;">
-                    <i class="fas fa-palette" style="font-size: 2.5rem; color: #e67e22; margin-bottom: 1rem;"></i>
+                <div style="flex: 1.2;" class="reveal-left">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:kendramz2000@gmail.com" aria-label="Enviar correo electrónico a Kendra Martinez">kendramz2000@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <a href="tel:+59173294700" aria-label="Llamar a Kendra Martinez">(+591) 73294700</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <a href="https://www.linkedin.com/in/kendra-mart%C3%ADnez-223266283" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Kendra Martinez">linkedin.com/in/kendra-martínez</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-behance" aria-hidden="true"></i>
+                            <a href="https://www.behance.net/kendramartne" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Behance de Kendra Martinez">behance.net/kendramartne</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe" aria-hidden="true"></i>
+                            <span>Disponible para freelance & proyectos digitales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-right" style="flex: 0.9; background: #fefaf5; border-radius: 32px; padding: 1.5rem; text-align: center; border: 1px solid #ffe6d5;">
+                    <i class="fas fa-palette" style="font-size: 2.5rem; color: #e67e22; margin-bottom: 1rem;" aria-hidden="true"></i>
                     <p style="font-weight: 500;">¿Buscas comunicar con diseño funcional?<br>Hablemos sobre tu próximo proyecto visual.</p>
                     <a href="mailto:kendramz2000@gmail.com" class="btn" style="margin-top: 1rem; display: inline-flex;">✉️ Escríbeme</a>
                 </div>
@@ -721,15 +934,32 @@
 
 <footer>
     <div class="container">
-        <p>© 2025 Kendra Martinez — Diseñadora Gráfica Junior | La Paz, Bolivia</p>
-        <p style="margin-top: 0.5rem; font-size: 0.7rem;">Identidad visual · Redes sociales · Piezas publicitarias · Tipografía</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f0e7de; text-align: left;">
+<!-- GÜNCELLENEN LOGO KISMI (ALT BİLGİ / FOOTER) -->
+            <div>
+                <a href="#inicio" style="text-decoration: none;">
+                    <img src="pictures/logo.png" alt="Kendra Martinez Logo" class="footer-logo">
+                </a>
+                <p style="margin-top: 0.3rem; color: #6c7a8a; font-size: 0.85rem;">Diseñadora Gráfica Junior | La Paz, Bolivia</p>
+            </div>
+            <div style="display: flex; gap: 1.2rem; font-size: 1.2rem;">
+                <a href="https://www.behance.net/kendramartne" target="_blank" rel="noopener noreferrer" style="color: #e20eb5; transition: transform 0.2s; display: inline-block;"><i class="fab fa-behance" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/kendra-mart%C3%ADnez-223266283" target="_blank" rel="noopener noreferrer" style="color: #e20eb5; transition: transform 0.2s; display: inline-block;"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:kendramz2000@gmail.com" style="color: #e20eb5; transition: transform 0.2s; display: inline-block;"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: #8a99aa;">
+            <p>© 2026 Kendra Martinez. Todos los derechos reservados.</p>
+            <p style="letter-spacing: 0.3px;">Identidad visual · Redes sociales · Piezas publicitarias · Tipografía</p>
+        </div>
     </div>
 </footer>
 
 <!-- Lightbox Modal -->
-<div id="imageModal" class="modal">
+<div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Vista previa de imagen">
     <span class="close-modal">&times;</span>
-    <img class="modal-content" id="modalImage">
+    <img class="modal-content" id="modalImage" alt="Vista ampliada del proyecto">
 </div>
 
 <script>
@@ -759,6 +989,7 @@
             e.stopPropagation();
             modal.style.display = 'flex';
             modalImg.src = img.src;
+            modalImg.alt = img.alt;
         });
     });
 
@@ -769,11 +1000,32 @@
         }
     });
 
-    // Prevenir comportamiento por defecto de enlaces vacíos
     document.addEventListener('keydown', (e) => {
         if(e.key === 'Escape' && modal.style.display === 'flex') {
             modal.style.display = 'none';
         }
+    });
+
+    // Scroll Reveal Observer (Intersection Observer API)
+    const revealCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, 100);
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null,
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+        revealObserver.observe(el);
     });
 </script>
 </body>
