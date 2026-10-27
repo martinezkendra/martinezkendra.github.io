@@ -1,0 +1,16 @@
+# Kendra Martinez - Portfolio
+# URL: https://martinezkendra.github.io/
+
+User-agent: *
+Allow: /
+
+# Görsellerin Google Görseller'de çıkması için özel izin
+User-agent: Googlebot-Image
+Allow: /pictures/
+
+# PDF CV'nin taranmasına izin ver
+User-agent: Googlebot
+Allow: /*.pdf$
+
+# Site Haritası
+Sitemap: https://martinezkendra.github.io/sitemap.xml
