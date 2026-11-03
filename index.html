@@ -142,9 +142,9 @@
             padding: 1rem 0;
             flex-wrap: wrap;
         }
-/* LOGO STYLES */
+        /* LOGO STYLES */
         .logo-img {
-            max-height: 45px; /* Üst menüdeki logo yüksekliği */
+            max-height: 45px;
             width: auto;
             display: block;
             transition: transform 0.2s ease;
@@ -153,11 +153,12 @@
             transform: scale(1.02);
         }
         .footer-logo {
-            max-height: 55px; /* Alt kısımdaki logo yüksekliği */
+            max-height: 55px;
             width: auto;
             display: block;
             margin-bottom: 0.5rem;
-        }        .logo {
+        }
+        .logo {
             font-size: 1.6rem;
             font-weight: 700;
             background: linear-gradient(135deg, #e20eb5, #d35400);
@@ -167,6 +168,18 @@
             letter-spacing: -0.5px;
             text-decoration: none;
         }
+
+        /* MOBİL MENÜ BUTONU İÇİN STİL */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #e20eb5;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -182,6 +195,7 @@
         .nav-links a:hover {
             color: #e67e22;
         }
+
         /* hero */
         .hero {
             padding: 80px 0 60px;
@@ -614,11 +628,34 @@
             transform: scale(1);
         }
 
+        /* ----- GÜNCELLENMİŞ MOBİL MEDİA SORGUSU ----- */
         @media (max-width: 800px) {
             .navbar {
-                flex-direction: column;
-                gap: 1rem;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
             }
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                gap: 1.5rem;
+                padding: 1.5rem 0 0.5rem 0;
+            }
+            .nav-links.active {
+                display: flex;
+                animation: slideDown 0.3s ease-out forwards;
+            }
+            @keyframes slideDown {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
             .hero-content {
                 flex-direction: column-reverse;
                 text-align: center;
@@ -652,7 +689,6 @@
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            /* Mobilde logoların boyutunu biraz küçültelim */
             .logo-img { max-height: 35px; }
             .footer-logo { max-height: 45px; }
         }
@@ -666,6 +702,12 @@
             <a href="#inicio" style="text-decoration: none;">
                 <img src="pictures/logo.png" alt="Kendra Martinez Logo" class="logo-img">
             </a>
+
+            <!-- MOBİL MENÜ BUTONU -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -791,45 +833,45 @@
                 <article class="portfolio-item reveal" data-img="Especimen tipográfico-03.png">
                     <img class="portfolio-img" src="pictures/Especimen%20tipográfico-03.png" alt="Especimen tipográfico homenajen a Paul Renner y tipografía Futura por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>Especimen Tipográfico</h3>
+                        <h3>Espécimen Tipográfico: Futura </h3>
                         <p>Tipografía / Bauhaus</p>
-                        <div class="portfolio-desc">Homenaje a Paul Renner y la tipografía Futura. Pieza inspirada en la funcionalidad y la modernidad industrial. Proyecto de estudio sobre la Bauhaus.</div>
+                        <div class="portfolio-desc">Crear un homenaje visual a la tipografía Futura, explorando la geometría de la Bauhaus en una composición de gran formato apta para exhibición.</div>
                     </div>
                 </article>
                 <!-- 2. Planet Zanná -->
                 <article class="portfolio-item reveal" data-img="Planet Zanná.jpg">
                     <img class="portfolio-img" src="pictures/Mesa%20de%20trabajo%201@2x.png" alt="Diseño de portada musical Cristalyne por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>Portada musical Cristalyne</h3>
+                        <h3>Cristalyne - Portada musical</h3>
                         <p>Branding / Packaging</p>
-                        <div class="portfolio-desc">Diseño de identidad y etiqueta para línea de vitaminas "Extractos de teVerde". Estética fresca y natural que conecta con el bienestar.</div>
+                        <div class="portfolio-desc">Diseñar una portada que traduzca el sonido en una experiencia visual inmersiva, diferenciándose de los estándares del género y atrayendo la atención del oyente de inmediato.</div>
                     </div>
                 </article>
                 <!-- 3. La belleza ocurre en silencio -->
                 <article class="portfolio-item reveal" data-img="poster belleza, naturaleza, sutileza.png">
                     <img class="portfolio-img" src="pictures/Planet%20Zanná.jpg" alt="Poster conceptual Planet Zanná estilo poesía visual por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>Planet Zanná</h3>
+                        <h3>Planet Zanná - Afiche publicitario</h3>
                         <p>Poster / Poesía visual</p>
-                        <div class="portfolio-desc">Afiche conceptual que explora la sutileza de la naturaleza y el poder de lo minimalista. Tipografía orgánica y composición etérea.</div>
+                        <div class="portfolio-desc">Promocionar una bebida saludable resaltando sus atributos de frescura y vitalidad, mediante un diseño llamativo que despierte el deseo de consumo inmediato.</div>
                     </div>
                 </article>
                 <!-- 4. Donde la piel marca el ritmo -->
                 <article class="portfolio-item reveal" data-img="poster donde la piel marca el ritmo.png">
                     <img class="portfolio-img" src="pictures/poster%20belleza,%20naturaleza,%20sutileza.png" alt="Pieza gráfica La belleza ocurre en silencio por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>La belleza ocurre en silencio</h3>
+                        <h3>La belleza ocurre en silencio - Póster minimalista</h3>
                         <p>Arte / Expresión corporal</p>
-                        <div class="portfolio-desc">Pieza gráfica que fusiona movimiento, textura y sensualidad. Trabajo de experimentación con fotografía y tipografía dinámica.</div>
+                        <div class="portfolio-desc">Transmitir la esencia de la belleza de forma sutil y directa. El reto consistió en crear una pieza de alto impacto emocional utilizando únicamente un enfoque minimalista, demostrando que la claridad y la armonía visual son suficientes para captar la atención del espectador sin necesidad de ruido gráfico.</div>
                     </div>
                 </article>
                 <!-- 5. DUA LIPA - Radical Optimism -->
                 <article class="portfolio-item reveal" data-img="POSTER DUA LIPA.png">
                     <img class="portfolio-img" src="pictures/poster%20donde%20la%20piel%20marca%20el%20ritmo.png" alt="Póster conceptual Donde la piel marca el ritmo por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>Donde la piel marca el ritmo</h3>
+                        <h3>Donde la Piel Marca el Ritmo - Póster Conceptual</h3>
                         <p>Póster / Música</p>
-                        <div class="portfolio-desc">Inspirado en el álbum "Radical Optimism". Diseño audaz, con paleta vibrante y composición moderna para capturar la energía pop.</div>
+                        <div class="portfolio-desc">Traducir el concepto abstracto del ritmo y la música en una experiencia puramente física y visual. El reto fue evocar el movimiento y la melodía sin usar elementos obvios, logrando una pieza que conectara con el instinto y las emociones del espectador.</div>
                     </div>
                 </article>
                 <!-- 6. VENOM: Let There Be Carnage -->
@@ -838,16 +880,16 @@
                     <div class="portfolio-info">
                         <h3>Venom: Carnage</h3>
                         <p>Cine / Fanart</p>
-                        <div class="portfolio-desc">Poster conceptual de la película "Let There Be Carnage", integrando tipografía agresiva y contraste dramático. Homenaje al universo simbionte.</div>
+                        <div class="portfolio-desc">Crear un póster de cine no oficial, pero con acabados profesionales de distribución comercial.</div>
                     </div>
                 </article>
                 <!-- 7. POSTER DUA LIPA -->
                 <article class="portfolio-item reveal" data-img="POSTER DUA LIPA.png">
                     <img class="portfolio-img" src="pictures/POSTER%20DUA%20LIPA.png" alt="Diseño de portada musical Radical Optimism Dua Lipa por Kendra Martinez" width="400" height="400" loading="lazy">
                     <div class="portfolio-info">
-                        <h3>Portada Radical Optmism</h3>
+                        <h3>Dua Lipa - Radical Optimism Tour Póster</h3>
                         <p>Music / Cover</p>
-                        <div class="portfolio-desc">Inspirado en el álbum "Radical Optimism". Diseño audaz, con paleta vibrante y composición moderna para capturar la energía pop.</div>
+                        <div class="portfolio-desc">Capturar la esencia vibrante y enérgica de la artista y su nuevo álbum en una sola pieza. El reto consistió en fusionar el retrato de primer plano con la silueta en el escenario, creando una transición fluida que transmitiera la fuerza de una presentación en vivo, logrando un acabado de distribución comercial oficial.</div>
                     </div>
                 </article>
             </div>
@@ -936,7 +978,6 @@
 <footer>
     <div class="container">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f0e7de; text-align: left;">
-<!-- GÜNCELLENEN LOGO KISMI (ALT BİLGİ / FOOTER) -->
             <div>
                 <a href="#inicio" style="text-decoration: none;">
                     <img src="pictures/logo.png" alt="Kendra Martinez Logo" class="footer-logo">
@@ -1027,6 +1068,31 @@
 
     document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
         revealObserver.observe(el);
+    });
+
+    // ----- EKLENEN MOBİL MENÜ İŞLEVSALLİĞİ -----
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcon = menuToggle.querySelector('i');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        // İkonu hamburger (bars) ve çarpı (times) arasında değiştir
+        if (navLinks.classList.contains('active')) {
+            menuIcon.classList.replace('fa-bars', 'fa-times');
+        } else {
+            menuIcon.classList.replace('fa-times', 'fa-bars');
+        }
+    });
+
+    // Menüden bir linke tıklandığında menüyü otomatik kapat
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if(window.innerWidth <= 800) {
+                navLinks.classList.remove('active');
+                menuIcon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
     });
 </script>
 </body>
