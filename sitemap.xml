@@ -1,0 +1,35 @@
+<url>
+    <loc>https://martinezkendra.github.io/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/logo.png</image:loc>
+        <image:title>Kendra Martinez Logo</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/profile.jpeg</image:loc>
+        <image:title>Kendra Martinez - Diseñadora Gráfica Junior</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/Especimen%20tipogr%C3%A1fico-03.png</image:loc>
+        <image:title>Especimen Tipográfico Paul Renner</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/Mesa%20de%20trabajo%201@2x.png</image:loc>
+        <image:title>Cristalyne Té Verde Branding</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/Planet%20Zann%C3%A1.jpg</image:loc>
+        <image:title>Planet Zanná Poster</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/poster%20donde%20la%20piel%20marca%20el%20ritmo.png</image:loc>
+        <image:title>Radical Optimism Poster</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://martinezkendra.github.io/pictures/poster%20venom.jpg</image:loc>
+        <image:title>Venom Carnage Poster Fanart</image:title>
+    </image:image>
+</url>
